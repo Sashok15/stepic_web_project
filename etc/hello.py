@@ -10,3 +10,6 @@ CONFIG = {
         'hello:app',
     ),
 }
+
+pythonpath="/home/box/web"
+# pythonpath="/home/sashok15/Projects/stepic_web_project"
