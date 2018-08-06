@@ -4,4 +4,4 @@ sudo /etc/init.d/nginx restart
 # sudo gunicorn -c /etc/gunicorn.d/hello.py hello:application
 # sudo gunicorn --bind 0.0.0.0:8000 ask.wsgi:application
 sudo gunicorn -c /home/box/web/etc/gunicorn.conf hello:app
-sudo gunicorn -c /home/box/web/etc/gunicorn-django.conf wsgi:application
+sudo gunicorn -c /home/box/web/etc/gunicorn-django.py ask.wsgi:application
