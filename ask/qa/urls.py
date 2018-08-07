@@ -3,11 +3,11 @@ from .views import test
 
 
 urlpatterns = [
-    url('', test),
-    url('login/', test),
-    url('signup/', test),
-    url('question/<int:id>/', test),
-    url('ask/', test),
-    url('popular/', test),
-    url('new/', test)
+    url(r'^$', test),
+    url(r'^login/$', test),
+    url(r'^signup/$', test),
+    url(r'^question/$(?P<id>\d+)/', test),
+    url(r'^ask/$', test),
+    url(r'^popular/$', test),
+    url(r'^new/$', test)
 ]
