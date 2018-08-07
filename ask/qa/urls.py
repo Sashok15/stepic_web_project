@@ -1,12 +1,14 @@
-from django.urls import path
+from django.urls import url
+from django.conf.urls import url
 from .views import test
 
+
 urlpatterns = [
-    path('', test),
-    path('login/', test),
-    path('signup/', test),
-    path('question/<int:id>/', test),
-    path('ask/', test),
-    path('popular/', test),
-    path('new/', test)
+    url('', test),
+    url('login/', test),
+    url('signup/', test),
+    url('question/<int:id>/', test),
+    url('ask/', test),
+    url('popular/', test),
+    url('new/', test)
 ]
